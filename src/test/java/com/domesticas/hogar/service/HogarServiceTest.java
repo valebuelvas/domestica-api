@@ -567,4 +567,5 @@ class HogarServiceTest {
                 verify(hogarRepository, times(1)).delete(hogar);
                 verify(miembroHogarRepository, never()).save(any());
         }
+
 }
