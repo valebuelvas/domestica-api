@@ -176,7 +176,6 @@ class HogarServiceTest {
                 CrearHogarRequest request = new CrearHogarRequest();
                 request.setNombre("Hogar Test");
 
-                when(hogarRepository.existsByCodigoAcceso(anyString())).thenReturn(false);
                 when(usuarioRepository.findByEmail("noexiste@test.com"))
                                 .thenReturn(Optional.empty());
 
@@ -195,7 +194,6 @@ class HogarServiceTest {
                 CrearHogarRequest request = new CrearHogarRequest();
                 request.setNombre("Hogar Test");
 
-                when(hogarRepository.existsByCodigoAcceso(anyString())).thenReturn(false);
                 when(usuarioRepository.findByEmail("admin@test.com"))
                                 .thenReturn(Optional.of(usuarioAdmin));
                 when(rolRepository.findByNombre("Padre")).thenReturn(Optional.empty());
