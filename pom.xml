@@ -37,6 +37,7 @@
             **/dto/**,
             **/model/**,
             **/config/**,
+            **/security/SecurityConfig.java,
             **/exception/GlobalExceptionHandler.java,
             **/*Application.java,
             **/controller/**
